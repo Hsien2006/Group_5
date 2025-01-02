@@ -22,7 +22,7 @@ int main() {
         goto back;
     }
     else {
-        // 顯示訂單明細
+      
         printf("\n訂單明細:\n");
         for (int i = 0; i < order_count; i++) {
             if (orders[i].sweetness > 0) {
@@ -37,12 +37,5 @@ int main() {
             }
         }
 
-        printf("\n總金額: $%d\n", total);
-        printf("找零: $%d\n", change);
-        // 計算找零方式
-        for (int c = 0; c < 7; c++) {
-            counts[c] = change / coins[c];  // 計算使用的硬幣數量
-            change = change % coins[c];   // 剩下的金額
-        }
-        return 0;
+       
     }
