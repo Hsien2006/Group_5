@@ -15,7 +15,11 @@ typedef struct {
 } OrderItem;
 
 int main() {
-    change = money_given - total;
+   
+    int money_given, change;
+back:
+    printf("請輸入支付金額: $");
+    scanf("%d", &money_given); change = money_given - total;
 
     if (change < 0) {
         printf("支付金額不足，請增加支付金額。\n");
